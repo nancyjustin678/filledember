@@ -1,6 +1,6 @@
 package main
 import ("fmt";"log";"os";"strings")
-const appName = "auth-service-1ad727"
+const appName = "auth-service-1eccaa"
 type Config struct{Name string;Env string;Debug bool;Args []string}
 func loadConfig() Config{env:=os.Getenv("auth-service_ENV");if env==""{env="production"};return Config{Name:appName,Env:env,Debug:strings.ToLower(os.Getenv("DEBUG"))=="true",Args:os.Args[1:]}}
 func run(cfg Config) error{log.Printf("[%s] env=%s debug=%v args=%v\n",cfg.Name,cfg.Env,cfg.Debug,cfg.Args);fmt.Println("Execution completed successfully");return nil}

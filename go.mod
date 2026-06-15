@@ -1,3 +1,3 @@
-module auth_service_1ad727
+module auth_service_1eccaa
 
 go 1.23

